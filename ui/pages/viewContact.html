@@ -1,0 +1,65 @@
+<div class="row">
+    <div class="col-sm-12 viewContact">
+        <h4>Name</h4>
+        <h4 id="name"></h4>
+        <h4>Number</h4>
+        <h4 id="number"></h4>
+        <button class="btn btn-success" id="send">Send Message</button>
+    </div>
+    <div>
+        <h1 id="text" class="error-text"></h1>
+    </div>
+</div>
+<script>
+  $(document).ready(() => {
+    let urlParams = new URLSearchParams(window.location.search);
+    $(".viewContact").hide()
+    $("#text").show().text('Fetching Data....').append('<i class="fas fa-spinner fa-spin loading"></i>')
+    fetch('/api/contact.getViewContact', {
+      method: 'post',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({peopleId: parseInt(urlParams.get('peopleid'))})
+    }).then(r => {
+      return r.json()
+    }).then(data => {
+      if (data && data.length) {
+        $("#text").hide()
+        $(".viewContact").show()
+        let people = data[0]
+        $("#name").text(people.name)
+        $("#number").text(people.number)
+        return data[0]
+      } else if (data.message) {
+        throw new Error(data.message)
+      } else
+        throw new Error('Something went wrong!!!, try again')
+    }).then(people => {
+      $("#send").on('click', (e) => {
+        e.preventDefault()
+        $("#send").append('<i class="fas fa-spinner fa-spin loading"></i>')
+        fetch('/api/sms.sendOTP', {
+          method: 'post',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({peopleId: parseInt(urlParams.get('peopleid'))})
+        }).then(r => {
+          return r.json()
+        }).then(data => {
+          let sent = []
+          let storeData = localStorage.getItem("sentDetails");
+          if (storeData && storeData.length) {
+            sent = JSON.parse(storeData);
+          }
+          sent.push(data)
+          localStorage.setItem('sentDetails', JSON.stringify(sent));
+          $(".loading").remove()
+        }).catch(e => {
+          $("#text").html('').text(e.message)
+          $(".loading").remove()
+        })
+      })
+    }).catch(e => {
+      $(".viewContact").hide()
+      $("#text").html('').text(e.message)
+    })
+  })
+</script>

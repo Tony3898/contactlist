@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-bg-color: #1B1B2F;
+    --primary: #162447;
+    --secondary: #1F4068;
+    --text: #FFFFFF;
+    --accent: #E43F54;
+}
+
+body, html {
+    background: var(--main-bg-color);
+    color: var(--text);
+    height: 100vh;
+    width: 100%;
+    font-family: 'Coiny', cursive;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, .table {
+    color: var(--text);
+}
+
+.error-text
+{
+    color: red;
+    text-align: center;
+    width: 100%;
+    padding: 16px;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foot {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    background: var(--primary);
+    color: var(--text);
+}
+
+.foot-head {
+    width: 30%;
+    color: var(--text);
+}
+
+.foot-social {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    color: var(--text);
+
+
+}
+
+.foot-social-links {
+    color: var(--main-bg-color);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.foot-social-links a {
+    color: var(--text);
+    font-size: 20px;
+}
+
+.foot-social-links a:hover {
+    color: var(--accent);
+}
+
+.foot-copy {
+    color: var(--text);
+    font-size: 16px;
+    width: 100%;
+}
+
+.heart {
+    color: var(--accent);
+}
+
+.heart:hover {
+    color: var(--text);
+}
+
+.text {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.text:hover {
+    color: var(--primary);
+}
+
+.contact-list {
+
+}
+
+.contact-list-ul {
+
+}
+
+.contact-list-ul li {
+    display: flex;
+    justify-content: space-between;
+    background: var(--primary);
+    margin: 16px auto;
+    padding: 16px;
+    list-style: none;
+}
+
+.contact-list-ul li button {
+    background: var(--accent);
+}
+
+.viewContact
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 16px auto;
+
+}

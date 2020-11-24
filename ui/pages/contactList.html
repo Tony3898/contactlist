@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 contact-list">
+            <ul id="contact-list" class="contact-list-ul"></ul>
+        </div>
+    </div>
+</div>
+
+<script>
+  $(document).ready(() => {
+    $("#contact-list").html('')
+    fetch('/api/contact.getAllContacts', {
+      method: 'POST',
+    }).then(r => {
+      return r.json()
+    }).then(data => {
+      data.forEach(people => {
+        $("#contact-list").append(`<li><span>${people.name}</span><a href="/app/viewContact?peopleid=${people.id}"><button class="btn btn-primary">View</button> </a></li>`)
+      })
+    }).catch(e => {
+      $("#formError").text(e.message)
+    })
+  })
+</script>

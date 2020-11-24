@@ -1,0 +1,44 @@
+{
+  "name": "@tony3898/contactlist",
+  "version": "1.0.0",
+  "description": "contactlist",
+  "main": "server.js",
+  "author": "Tejas Rana <contact@tejasrana.in> (https://tejasrana.in/)",
+  "license": "MIT",
+  "scripts": {
+    "start:server": "nodemon server",
+    "start:ui": "webpack --watch",
+    "build:ui": "webpack --mode production",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Tony3898/contactlist.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "server.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/Tony3898/contactlist/issues"
+  },
+  "homepage": "https://github.com/Tony3898/contactlist",
+  "keywords": [
+    "contactlist"
+  ],
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "axios": "^0.21.0",
+    "js-yaml": "^3.14.0",
+    "chalk": "^4.1.0",
+    "cors": "^2.8.5",
+    "twilio": "^3.52.0",
+    "hbs": "^4.1.1"
+  }
+}

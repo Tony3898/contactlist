@@ -1,0 +1,19 @@
+dev: true
+project_name: 'contactlist'
+digInUrl: '/app/contactList'
+
+connection:
+  port: 5001
+  host: localhost
+
+sms:
+  twilio:
+    sid: 'AC2a0bb30546c0e2399da33564c3d2e806'
+    token: '3c27cd2ddb694a45f168c5aea8d10223'
+    number: '+12057079679'
+
+nav:
+  - name: 'Message Sent'
+    path: '/app/messagesSent'
+  - name: 'Contact List'
+    path: '/app/contactList'

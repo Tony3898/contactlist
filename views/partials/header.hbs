@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Tejas Rana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>{{title}} | Tejas Rana</title>
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/public/assets/css/nav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+{{#if nav}}
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="/">{{project}}</a>
+            </div>
+            <nav>
+                <div class="nav-mobile">
+                    <a id="nav-toggle" href="#"><span></span></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="/">Home</a></li>
+                    {{#each nav as |n|}}
+                        {{#if n.sub}}
+                            <li><a href="#!">{{n.name}}</a>
+                                <ul class="nav-dropdown">
+                                    {{#each n.sub as |nsub|}}
+                                        <li><a href="{{nsub.path}}">{{nsub.name}}</a></li>
+                                    {{/each}}
+                                </ul>
+                            </li>
+                        {{else}}
+                            <li><a href="{{n.path}}">{{n.name}}</a></li>
+                        {{/if}}
+                    {{/each}}
+                    {{#if loggedIn}}
+                        <li><a href="#!">Hello, {{username}}</a>
+                            <ul class="nav-dropdown">
+                                <li><a href="/auth/profile">Profile</a></li>
+                                <li><a href="/auth/logout">Logout</a></li>
+                            </ul>
+                        </li>
+                    {{else}}
+                        <!--<li><a href="/auth/login">Login</a></li>-->
+                    {{/if}}
+                </ul>
+            </nav>
+        </div>
+    </section>
+{{/if}}

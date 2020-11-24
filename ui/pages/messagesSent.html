@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 contact-list">
+            <table class="table" style="padding: 16px; margin-top: 16px">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Number</th>
+                    <th>Message</th>
+                    <th>Created</th>
+                </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+  $(document).ready(() => {
+    $("#contact-list").html('')
+    let storeData = localStorage.getItem("sentDetails");
+    if (storeData && storeData.length) {
+      storeData = JSON.parse(storeData)
+      storeData.sort((a, b) => (a.meta.created < b.meta.created) ? 1 : ((b.meta.created < a.meta.created) ? -1 : 0)).forEach(s => {
+        $("#tbody").append(`<tr> <td>${s.name}</td><td>${s.to}</td><td>${s.body}</td><td>${new Date(s.meta.created).toLocaleString()}</td> </tr>`)
+      })
+    } else {
+      $("#contact-list").html('').append('<h1>No Messages</h1>')
+    }
+  })
+</script>

@@ -1,0 +1,45 @@
+{{>header}}
+<style>
+    #container {
+        font-size: 50px;
+        color: var(--text);
+        font-family: Trocchi;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    #middle {
+        font-size: 250px;
+        font-weight: bold;
+    }
+
+    #bottom {
+        font-size: 30px;
+    }
+
+    #back {
+        padding: 16px;
+        font-size: 16px;
+        background: var(--accent);
+        color: var(--text);
+        border: none;
+        border-radius: 8px;
+    }
+
+    #back:hover {
+        text-decoration: none;
+        background: var(--primary);
+    }
+</style>
+<div id="container">
+    <div id="top">Oops!</div>
+    <div id="middle">404</div>
+    <div id="bottom">Sorry, couldn't find what you're looking for</div>
+    <br>
+    <a id="back" href="/">Let's get back</a>
+</div>
+
+{{>footer}}
