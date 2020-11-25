@@ -8,9 +8,9 @@ connection:
 
 sms:
   twilio:
-    sid: 'AC2a0bb30546c0e2399da33564c3d2e806'
-    token: '3c27cd2ddb694a45f168c5aea8d10223'
-    number: '+12057079679'
+    sid: ''
+    token: ''
+    number: ''
 
 nav:
   - name: 'Message Sent'

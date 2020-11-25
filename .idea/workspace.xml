@@ -19,7 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a144a464-8446-462d-9f6a-4f8769dcea03" name="Default Changelist" comment="" />
+    <list default="true" id="a144a464-8446-462d-9f6a-4f8769dcea03" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apis/sms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/apis/sms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/pages/messagesSent.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pages/messagesSent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/pages/viewContact.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pages/viewContact.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +40,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../node-postgre-sql" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kir0WcTy9wqJFqrYn4trZsHmRx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -57,6 +64,23 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,6 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606194029676</updated>
       <workItem from="1606194030736" duration="3537000" />
+      <workItem from="1606288081726" duration="1580000" />
     </task>
     <servers />
   </component>
@@ -82,23 +107,24 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1895" height="273" key="GridCell.Tab.0.bottom" timestamp="1606200221605">
+    <state width="1895" height="273" key="GridCell.Tab.0.bottom" timestamp="1606288712501">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1895" height="273" key="GridCell.Tab.0.bottom/0.29.1920.1051@0.29.1920.1051" timestamp="1606200221605" />
-    <state width="1895" height="273" key="GridCell.Tab.0.center" timestamp="1606200221605">
+    <state width="1895" height="273" key="GridCell.Tab.0.bottom/0.29.1920.1051@0.29.1920.1051" timestamp="1606288712501" />
+    <state width="1895" height="273" key="GridCell.Tab.0.center" timestamp="1606288712501">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1895" height="273" key="GridCell.Tab.0.center/0.29.1920.1051@0.29.1920.1051" timestamp="1606200221605" />
-    <state width="1895" height="273" key="GridCell.Tab.0.left" timestamp="1606200221605">
+    <state width="1895" height="273" key="GridCell.Tab.0.center/0.29.1920.1051@0.29.1920.1051" timestamp="1606288712501" />
+    <state width="1895" height="273" key="GridCell.Tab.0.left" timestamp="1606288712500">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1895" height="273" key="GridCell.Tab.0.left/0.29.1920.1051@0.29.1920.1051" timestamp="1606200221605" />
-    <state width="1895" height="273" key="GridCell.Tab.0.right" timestamp="1606200221605">
+    <state width="1895" height="273" key="GridCell.Tab.0.left/0.29.1920.1051@0.29.1920.1051" timestamp="1606288712500" />
+    <state width="1895" height="273" key="GridCell.Tab.0.right" timestamp="1606288712501">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1895" height="273" key="GridCell.Tab.0.right/0.29.1920.1051@0.29.1920.1051" timestamp="1606200221605" />
+    <state width="1895" height="273" key="GridCell.Tab.0.right/0.29.1920.1051@0.29.1920.1051" timestamp="1606288712501" />
   </component>
 </project>

@@ -1,7 +1,8 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12 contact-list">
-            <table class="table" style="padding: 16px; margin-top: 16px">
+            <h1 class="error-text" id="error"></h1>
+            <table class="table" style="padding: 16px; margin-top: 16px" id="table">
                 <thead>
                 <tr>
                     <th>Name</th>
@@ -20,15 +21,17 @@
 
 <script>
   $(document).ready(() => {
-    $("#contact-list").html('')
+    $("#error").html('').hide()
     let storeData = localStorage.getItem("sentDetails");
     if (storeData && storeData.length) {
+      $("#table").show()
       storeData = JSON.parse(storeData)
       storeData.sort((a, b) => (a.meta.created < b.meta.created) ? 1 : ((b.meta.created < a.meta.created) ? -1 : 0)).forEach(s => {
         $("#tbody").append(`<tr> <td>${s.name}</td><td>${s.to}</td><td>${s.body}</td><td>${new Date(s.meta.created).toLocaleString()}</td> </tr>`)
       })
     } else {
-      $("#contact-list").html('').append('<h1>No Messages</h1>')
+      $("#table").hide()
+      $("#error").text('No Messages Sent').show()
     }
   })
 </script>

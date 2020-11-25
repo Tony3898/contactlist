@@ -7,7 +7,7 @@
         <button class="btn btn-success" id="send">Send Message</button>
     </div>
     <div>
-        <h1 id="text" class="error-text"></h1>
+        <h4 id="text" class="error-text"></h4>
     </div>
 </div>
 <script>
@@ -28,7 +28,7 @@
         let people = data[0]
         $("#name").text(people.name)
         $("#number").text(people.number)
-        return data[0]
+        return people
       } else if (data.message) {
         throw new Error(data.message)
       } else
@@ -44,6 +44,9 @@
         }).then(r => {
           return r.json()
         }).then(data => {
+          if (data.message) {
+            throw new Error(data.message)
+          }
           let sent = []
           let storeData = localStorage.getItem("sentDetails");
           if (storeData && storeData.length) {
@@ -51,15 +54,17 @@
           }
           sent.push(data)
           localStorage.setItem('sentDetails', JSON.stringify(sent));
+          $("#text").text('message sent successfully').css('color', 'green').show()
           $(".loading").remove()
         }).catch(e => {
-          $("#text").html('').text(e.message)
+          $("#text").text('Error: ' + e.message).show()
           $(".loading").remove()
         })
       })
     }).catch(e => {
       $(".viewContact").hide()
-      $("#text").html('').text(e.message)
+      $("#text").text('Error: ' + e.message).show()
+      $(".loading").remove()
     })
   })
 </script>
