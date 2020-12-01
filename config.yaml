@@ -3,7 +3,7 @@ project_name: 'contactlist'
 digInUrl: '/app/contactList'
 
 connection:
-  port: 5001
+  port: 5002
   host: localhost
 
 sms:
