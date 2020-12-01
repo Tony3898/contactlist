@@ -9,7 +9,7 @@
     "start:server": "nodemon server",
     "start:ui": "webpack --watch",
     "build:ui": "webpack --mode production",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
