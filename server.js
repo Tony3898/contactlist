@@ -21,7 +21,7 @@ app.use(express.urlencoded({extended: false}))
 app.use("/public/assets", express.static(path.join(__dirname, "/public/assets")));
 hbs.registerPartials(path.join(__dirname, "views/partials"));
 
-app.use(body_parser.urlencoded({ extended: true }));
+app.use(body_parser.urlencoded({extended: true}));
 app.use(body_parser.json())
 app.use(cors())
 
@@ -31,7 +31,7 @@ app.use('/', require("./src/routes/partials"))
 app.use('/app', require('./src/routes/app'))
 app.use("/api", require('./src/routes/api'))
 
-app.set('port', Tony.Config.connection.port)
+app.set('port', process.env.PORT || Tony.Config.connection.port)
 app.listen(Tony.Config.connection.port, () => {
-  console.log(info("listening on http://" + Tony.Config.connection.host + ":" + Tony.Config.connection.port))
+  console.log(info("listening on" + app.get('port')))
 })
