@@ -32,6 +32,6 @@ app.use('/app', require('./src/routes/app'))
 app.use("/api", require('./src/routes/api'))
 
 app.set('port', process.env.PORT || Tony.Config.connection.port)
-app.listen(Tony.Config.connection.port, () => {
+app.listen(app.get('port'), () => {
   console.log(info("listening on" + app.get('port')))
 })
