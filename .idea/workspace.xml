@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a144a464-8446-462d-9f6a-4f8769dcea03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apis/sms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/apis/sms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/pages/messagesSent.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pages/messagesSent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/pages/viewContact.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pages/viewContact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/data.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +49,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.19.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="javascript.nodejs.core.library.typings.version" value="10.17.48" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -91,6 +87,7 @@
       <updated>1606194029676</updated>
       <workItem from="1606194030736" duration="3537000" />
       <workItem from="1606288081726" duration="1580000" />
+      <workItem from="1606819583384" duration="2575000" />
     </task>
     <servers />
   </component>
@@ -110,21 +107,25 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1895" height="273" key="GridCell.Tab.0.bottom" timestamp="1606288712501">
+    <state x="662" y="352" width="585" height="411" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606821085251">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1895" height="273" key="GridCell.Tab.0.bottom/0.29.1920.1051@0.29.1920.1051" timestamp="1606288712501" />
-    <state width="1895" height="273" key="GridCell.Tab.0.center" timestamp="1606288712501">
+    <state x="662" y="352" width="585" height="411" key="#com.intellij.fileTypes.FileTypeChooser/0.29.1920.1051@0.29.1920.1051" timestamp="1606821085251" />
+    <state width="1895" height="273" key="GridCell.Tab.0.bottom" timestamp="1606822158433">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1895" height="273" key="GridCell.Tab.0.center/0.29.1920.1051@0.29.1920.1051" timestamp="1606288712501" />
-    <state width="1895" height="273" key="GridCell.Tab.0.left" timestamp="1606288712500">
+    <state width="1895" height="273" key="GridCell.Tab.0.bottom/0.29.1920.1051@0.29.1920.1051" timestamp="1606822158433" />
+    <state width="1895" height="273" key="GridCell.Tab.0.center" timestamp="1606822158433">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1895" height="273" key="GridCell.Tab.0.left/0.29.1920.1051@0.29.1920.1051" timestamp="1606288712500" />
-    <state width="1895" height="273" key="GridCell.Tab.0.right" timestamp="1606288712501">
+    <state width="1895" height="273" key="GridCell.Tab.0.center/0.29.1920.1051@0.29.1920.1051" timestamp="1606822158433" />
+    <state width="1895" height="273" key="GridCell.Tab.0.left" timestamp="1606822158433">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1895" height="273" key="GridCell.Tab.0.right/0.29.1920.1051@0.29.1920.1051" timestamp="1606288712501" />
+    <state width="1895" height="273" key="GridCell.Tab.0.left/0.29.1920.1051@0.29.1920.1051" timestamp="1606822158433" />
+    <state width="1895" height="273" key="GridCell.Tab.0.right" timestamp="1606822158433">
+      <screen x="0" y="29" width="1920" height="1051" />
+    </state>
+    <state width="1895" height="273" key="GridCell.Tab.0.right/0.29.1920.1051@0.29.1920.1051" timestamp="1606822158433" />
   </component>
 </project>

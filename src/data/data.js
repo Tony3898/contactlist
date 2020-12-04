@@ -7,12 +7,12 @@ module.exports = [
   {
     id: 2,
     name: 'Rahul Kumar',
-    number: '9999999999'
+    number: '+91-9709462958'
   },
   {
     id: 3,
-    name: 'Prakash',
-    number: '9999999999'
+    name: 'Kisan Network',
+    number: '+91-9810153260'
   },
   {
     id: 4,
