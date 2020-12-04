@@ -9,7 +9,7 @@ connection:
 sms:
   twilio:
     sid: 'AC80e37a7de97f05a8d11eb0a6e199b7b4'
-    token: 'de92c59a9446b75c7f19556d2acdb93d'
+    token: 'cff30834c7a93869daa9e9e3074a6c32'
     number: '+16106150459'
 
 nav:
